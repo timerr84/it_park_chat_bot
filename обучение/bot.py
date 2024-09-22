@@ -1,5 +1,5 @@
 import telebot;
-bot = telebot.TeleBot('8051689493:AAGQB6Ec2DaFYh8JZsosDwvOjTKSoiWcW00'); #тут токен бота
+bot = telebot.TeleBot(''); #тут токен бота
 @bot.message_handler(content_types=['text']) #слушаем бота
 def get_text(message):
     global name
