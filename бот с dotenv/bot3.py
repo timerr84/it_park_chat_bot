@@ -1,5 +1,6 @@
 import telebot
-from dotenv import load_dotenv #сначала надо импортировать pip install python-dotenv
+#сначала надо импортировать pip install python-dotenv
+from dotenv import load_dotenv 
 import os
 
 load_dotenv()

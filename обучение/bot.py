@@ -1,5 +1,10 @@
-import telebot;
-bot = telebot.TeleBot(''); #тут токен бота
+import telebot
+#сначала надо импортировать pip install python-dotenv
+from dotenv import load_dotenv 
+import os
+load_dotenv()
+bot = telebot.TeleBot(os.getenv('TOKEN'))
+
 @bot.message_handler(content_types=['text']) #слушаем бота
 def get_text(message):
     global name
